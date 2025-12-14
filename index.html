@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>林智锋爱王嘉妮</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .text {
+      font-size: 40px;
+      font-weight: bold;
+      color: #333;
+      opacity: 0;
+      animation: fadeIn 3s forwards, bounce 1s infinite, colorChange 4s infinite, rotate 5s infinite linear;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    @keyframes colorChange {
+      0% {
+        color: #333;
+      }
+      25% {
+        color: #ff6347; /* Tomato red */
+      }
+      50% {
+        color: #32cd32; /* Lime green */
+      }
+      75% {
+        color: #1e90ff; /* Dodger blue */
+      }
+      100% {
+        color: #333;
+      }
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="text">林智锋爱王嘉妮</div>
+</body>
+</html>
